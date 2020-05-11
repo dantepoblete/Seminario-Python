@@ -6,6 +6,13 @@ import hangman
 import reversegam
 import tictactoeModificado
 
+'''Para este algoritmo, elegí como estructura un diccionario de diccionarios, cuyas claves son los nombres de los jugadores y que tienen como
+valor asociado, otro diccionario, que contiene los juegos jugados, la cantidad de veces que el usuario ingreso y la fecha y hora del ultimo acceso.
+Esta eleccion fue optada por su practicidad ya que puedo acceder a los datos del jugador a partir de su nombre sin la necesidad de indices.'''
+
+'''Elegi el formato de archivos json porque posee la sintaxis de un diccionario de python y ya que elegi trabajar con diccionarios,me resulta
+mas practico para trabajar con la estructura'''
+
 documento=os.getcwd()+"\datos.txt"
 
 arch=open(documento,'a')
